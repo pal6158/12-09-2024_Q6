@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Different Input Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Form with Different Input Types</h2>
+
+    <form action="#" method="post">
+
+        <!-- Text input -->
+        <label for="text">Full Name:</label>
+        <input type="text" id="text" name="full-name" required>
+
+        <!-- Email input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+
+        <!-- Date input -->
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="date-of-birth" required>
+
+        <!-- Color input -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="favorite-color">
+
+        <!-- Number input -->
+        <label for="number">Number of Children:</label>
+        <input type="number" id="number" name="children" min="0" max="10">
+
+        <!-- Range input -->
+        <label for="range">Satisfaction Level (1-10):</label>
+        <input type="range" id="range" name="satisfaction" min="1" max="10">
+
+        <!-- Telephone input -->
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+        <!-- URL input -->
+        <label for="url">Personal Website:</label>
+        <input type="url" id="url" name="website" placeholder="https://example.com">
+
+        <!-- File input -->
+        <label for="file">Upload Resume:</label>
+        <input type="file" id="file" name="resume">
+
+        <!-- Time input -->
+        <label for="time">Preferred Contact Time:</label>
+        <input type="time" id="time" name="contact-time">
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
